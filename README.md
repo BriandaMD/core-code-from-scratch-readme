@@ -117,3 +117,79 @@ else {
 }
 VM781:4 This is a special number!
 
+
+
+WEEK 2
+TUESDAY 19/04
+1. Multiply exercise
+
+
+function multiply(a, b){
+  return a * b
+}
+
+2. ASCII Total exercise
+
+function uniTotal(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    count += str.charCodeAt(i);
+  }
+  return count;
+}
+
+
+
+3. Char From ASCII Value exercise
+
+function getChar(c){
+return String.fromCharCode(c);
+}
+
+
+4. Binary Addition exercise
+
+function addBinary(a,b) {
+let sum = a + b;
+  return sum.toString(2);
+}
+
+
+5. Student's Final Grade exercise
+
+function finalGrade(exam, projects) {
+  let total = 0;
+  if (exam > 90 || projects > 10) {
+  total = 100;
+} else if (exam > 75 && projects >= 5) {
+  total = 90;
+} else if (exam > 50 && projects >= 2) {
+  total = 75;
+} else {
+  total = 0;
+}
+  return total;
+}
+
+WEEK 2 
+
+Wednesday 20/04
+
+1. Holiday VIII - Duty Free exercise
+
+function dutyFree(normPrice, discount, hol){
+let descuentoTotal = normPrice*(discount/100);
+ 
+  return Math.floor (hol/descuentoTotal);
+}
+
+2. Twice As Old exercise
+
+function twiceAsOld(dadYearsOld, sonYearsOld) { n
+  let dobAgeSon = 2*sonYearsOld;
+  return Math.abs(dadYearsOld - dobAgeSon);
+}
+
+3. Valid Spacing exercise
+
+
