@@ -8,13 +8,18 @@ Week challenges (Tuesday) 05/04/2022
 2. Is Java compiled or interpreted, or both?
 -Java is both type, Java source code needs to be compiled into bytecode. And bytecode is a special machine language native to the JAVA also interpreted and executes this code at runtime.
 
-3. Pseudocode Currency Coverter 
+```html
+<script>
+	  3. Pseudocode Currency Coverter 
   1. START
   2. Dollars  <-- GET
   3. 0.000022  <-- BitCoinPrice GET
   4. ConvertedValue <-- Dollars * BitCoinPrice
   5. PRINT  ConvertedValue
   6. END
+</script>		       		       
+```
+
   
  
 Wednesday 06/04/2022
@@ -22,6 +27,10 @@ Wednesday 06/04/2022
 1. Your date of birth in the matrix? exercise    110110101011100
 
 2. MIPS exercise 
+
+```html
+<script>
+
   .data
         Numero1 : .asciiz "\nIngresa numero 1:\n"
         Numero2 : .asciiz "\nIngresa numero 2:\n"
@@ -67,10 +76,15 @@ Ingresa numero 2:
  EL resultado es:
 12
 -- program is finished running (dropped off bottom) --
-
+</script>		       		       
+```
 
 3. Display your name exercise
 
+```html
+<script>
+	
+	
 .data
 	      my_name: .asciiz "\nMariel\n"
   .text
@@ -78,9 +92,19 @@ Ingresa numero 2:
               li $v0, 4
               la $a0, my_name
               syscall
+	
+</script>		       		       
+``	
+	
 	      
-Thursday 07/04/2022	 
+Thursday 07/04/2022
+
+
 1. Print special numbers 1 to 100
+
+```html
+<script>
+
 var str = '';
 
 for (var x = 0; x < 101; x++) {
@@ -90,9 +114,15 @@ for (var x = 0; x < 101; x++) {
 console.log(str);
 
 '0123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100'
+			
+</script>		       		       
+```			
 
 2. Bad Code 
 
+```html
+<script>
+	
 var cond = false;
 
 if (cond) {
@@ -101,9 +131,17 @@ if (cond) {
   console.log('The cond variable is false');
 }
 VM241:6 The cond variable is false
+	
+</script>		       		       
+```
+
 
 3. Bad Code 2
 
+```html
+<script>
+	
+	
 var n = 100;
 
 if (n == 100) {
@@ -117,19 +155,33 @@ else {
 }
 VM781:4 This is a special number!
 
+</script>		       		       
+```
 
 
 WEEK 2
+
 TUESDAY 19/04
+
+
 1. Multiply exercise
 
-
+```html
+<script>
+	
 function multiply(a, b){
   return a * b
 }
 
+</script>		       		       
+```	
+	
 2. ASCII Total exercise
 
+ ```html
+<script>
+
+	
 function uniTotal(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
@@ -138,10 +190,14 @@ function uniTotal(str) {
   return count;
 }
 
+</script>		       		       
+```
 
 
 3. Char From ASCII Value exercise
 
+```html
+<script>
 
 function getChar(c){
  return String.fromCharCode(c)
@@ -149,17 +205,31 @@ function getChar(c){
 
 getChar(5);
 
+</script>		       		       
+``
+
+
 
 
 4. Binary Addition exercise
+
+```html
+<script>
 
 function addBinary(a,b) {
 let sum = a + b;
   return sum.toString(2);
 }
 
+	
+</script>		       		       
+```
+
 
 5. Student's Final Grade exercise
+
+```html
+<script>
 
 function finalGrade(exam, projects) {
   let total = 0;
@@ -175,11 +245,18 @@ function finalGrade(exam, projects) {
   return total;
 }
 
+	
+</script>		       		       
+```
 
 
 Wednesday 20/04
 
+
 1. Holiday VIII - Duty Free exercise
+
+```html
+<script>
 
 function dutyFree(normPrice, discount, hol){
 let descuentoTotal = normPrice*(discount/100);
@@ -187,14 +264,30 @@ let descuentoTotal = normPrice*(discount/100);
   return Math.floor (hol/descuentoTotal);
 }
 
+
+</script>		       		       
+```
+
+
 2. Twice As Old exercise
+
+```html
+<script>
 
 function twiceAsOld(dadYearsOld, sonYearsOld) { n
   let dobAgeSon = 2*sonYearsOld;
   return Math.abs(dadYearsOld - dobAgeSon);
 }
 
+</script>		       		       
+```
+
+
 3. Valid Spacing exercise
+
+```html
+<script>
+
 
 function validSpacing(s) {
     if(/^[\s]/.test(s) == true || /[\s]$/.test(s) == true) { 
@@ -215,11 +308,15 @@ function validSpacing(s) {
   return true; 
 }
 
+</script>		       		       
+```			      
 
 
 4. Fake Binary 
 
-
+```html
+<script>
+	
 function fakeBin(x){
 let digits = '';
     for (let i = 0; i < x.length; i++) {
@@ -232,27 +329,42 @@ let digits = '';
   return digits;
 }
 
-
+</script>		       		       
+```
 
 Thursday
 
 1. Remove All Exclamation Marks From The End Of Sentence
  
+```html
+<script>
+	
 function remove (str) {  
   const Regex = /!*$/g;
   return str.replace(Regex,'');
 }
 
+</script>		       		       
+```
+	
+
 2. Vowel Remover 
+
+```html
+<script>
 
 function shortcut (string) {
   return string.replace(/[aeiou*]/g, '');
 }
 
+</script>		       		       
+```
 
 3. Rock Paper Scissors! 
 
-
+```html
+<script>
+	
 const rps = (user1, user2) => {
   let result = "";
   if (user1 === user2) {
@@ -279,12 +391,15 @@ const rps = (user1, user2) => {
   return result
 } 
 
-
+</script>		       		       
+```
 
 
 4. Persistent Bugger 
 
-
+```html
+<script>
+	
 function persistence(num) {
   let counter = 0;
   
@@ -305,12 +420,19 @@ function persistence(num) {
   return counter;
 }
 
+</script>		       		       
+```
 
+-------------------------------------------------------------------------
 
  WEEK 3
  
+ 
 1. Who Likes It?  
-  
+
+ ```html
+<script>
+	
  function likes(names) {
   if (names.length == 0) return 'no one likes this';
   if (names.length == 1) return names[0] + ' likes this';
@@ -318,12 +440,18 @@ function persistence(num) {
   if (names.length == 3) return names[0] + ', ' + names[1] + ' and ' + names[2] + ' like this';
   return (names[0] +', ' + names[1] + ' and ' + (names.length - 2) + ' others like this');
 }
-
+	
+</script>		       		       
+```
 
 
 
 2. Bit Counting
 
+
+```html
+<script>
+	
 var countBits = function(n) {
   const base = (n).toString(2).split('');
   const result = base.reduce((sum, num) => sum + Number(num), 0);
@@ -331,21 +459,33 @@ var countBits = function(n) {
   return result;
 };
 
+</script>		       		       
+```
+
 
 
 3. Your Order, Please 
 
+```html
+<script>
+	
 function order(words){
   return words.split(' ').sort(function(a, b){
       return a.match(/\d/) - b.match(/\d/);
    }).join(' ');
 }  
 
+	</script>		       		       
+```
+
 
 Tuesday
 
 
 1. Simple Pig Latin
+
+```html
+<script>
 
 function pigIt(str){
   let newArr = [];
@@ -363,9 +503,16 @@ function pigIt(str){
   
 }
 
+</script>		       		       
+```
 
 
 2. Counting Duplicates 
+
+
+```html
+<script>
+
 
 function duplicateCount(text){
   const splitString = text.toLowerCase().split("").sort();
@@ -380,11 +527,16 @@ function duplicateCount(text){
   return setArray.size;
 }
 
+</script>		       		       
+```
 
 
 3. Decode The Morse Code
 
+```html
+<script>
 
+	
 decodeMorse = function(morseCode){
   morseCode = morseCode.trim();
   let refinedData = morseCode.split('   ');
@@ -405,11 +557,19 @@ decodeMorse = function(morseCode){
   return result.join('');
 }
 
-
+</script>		       		       
+```
+	
+	
 Wednesday
+
 
 1. Valid Parentheses 
 
+
+```html
+<script>
+	
 function validParentheses(parens) {
   let openNum = 0;
   for (let i = 0; i < parens.length; i++){
@@ -430,10 +590,15 @@ function validParentheses(parens) {
   }
 }
 
-
+</script>		       		       
+```
 
 2.  Convert String To Camel Case 
 
+```html
+<script>
+
+	
 function toCamelCase(str){
  let strArray;
   
@@ -463,9 +628,14 @@ function toCamelCase(str){
    
 }
 
-
+</script>		       		       
+```
 
 3. Unique In Order 
+
+```html
+<script>
+
 
 var uniqueInOrder=function(iterable){
   let newArr = []
@@ -477,10 +647,18 @@ var uniqueInOrder=function(iterable){
   return newArr
 }
 
+</script>		       		       
+```
 
+				  
+				  
+				  
 Thursday
 
 1. Fold an array
+
+```html
+<script>
 
 function foldArray(array, runs) {
   const r = [];
@@ -490,7 +668,14 @@ function foldArray(array, runs) {
 }
 
 
+</script>		       		       
+```
+
+
 2. Encrypt This! 
+
+```html
+<script>
 
 var encryptThis = function(str) {
  if(str === '') {return '';
@@ -505,3 +690,6 @@ var encryptThis = function(str) {
     }
 }
 
+
+</script>		       		       
+```
